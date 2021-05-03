@@ -1,0 +1,13 @@
+/* 	Main - Choose
+   	================================================== */
+.choose {
+	width: 100vw;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-left: calc(50% - 50vw);
+	background-color: var(--clr-neutral-300);
+
+	h2 ~ p {
+		max-width: 65ch;
+	}
+}
