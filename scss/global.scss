@@ -3,7 +3,7 @@
 /* ==================================================
 	Global Styles
 	================================================== */
-
+// TODO: What about some smooth transitions?
 @import "abstracts/variables";
 @import "abstracts/breakpoints";
 
@@ -42,6 +42,7 @@ h3 {
 
 a {
 	text-decoration: none;
+	color: var(--clr-neutral-400);
 }
 
 section > p {
@@ -59,6 +60,7 @@ section > p {
 @import "utilities/visually-hidden";
 @import "utilities/outline";
 @import "utilities/grid";
+@import "utilities/split";
 @import "utilities/cta";
 
 /* ==================================================
@@ -66,3 +68,5 @@ section > p {
    ================================================== */
 @import "blocks/header";
 @import "blocks/navigation";
+@import "blocks/intro";
+@import "blocks/footer";

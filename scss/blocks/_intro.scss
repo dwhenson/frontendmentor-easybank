@@ -1,0 +1,15 @@
+/* 	Main - Intro
+   	================================================== */
+.intro {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	@include respond-to("medium") {
+		flex-direction: row-reverse;
+	}
+
+	> * {
+		flex: 1;
+	}
+}
