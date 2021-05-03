@@ -3,7 +3,7 @@
 /* ==================================================
 	Global Styles
 	================================================== */
-// TODO: What about some smooth transitions?
+
 @import "abstracts/variables";
 @import "abstracts/breakpoints";
 
@@ -52,10 +52,6 @@ a {
 	}
 }
 
-section > p {
-	max-width: 65ch;
-}
-
 /* ==================================================
 	Utilities
 	================================================== */
@@ -76,5 +72,6 @@ section > p {
 @import "blocks/header";
 @import "blocks/navigation";
 @import "blocks/intro";
+@import "blocks/choose";
 @import "blocks/latest";
 @import "blocks/footer";

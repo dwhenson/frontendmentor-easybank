@@ -161,10 +161,6 @@ a:hover {
   color: var(--clr-primary-200);
 }
 
-section > p {
-  max-width: 65ch;
-}
-
 /* ==================================================
 	Utilities
 	================================================== */
@@ -254,7 +250,7 @@ section > p {
 }
 @media (min-width: 65em) {
   .grid {
-    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
   }
 }
 .grid img {
@@ -339,7 +335,7 @@ header {
 .site-head__inner .cta {
   display: none;
 }
-@media (min-width: 45em) {
+@media (min-width: 65em) {
   .site-head__inner .cta {
     display: inline-block;
   }
@@ -471,6 +467,19 @@ header {
   flex: 1;
 }
 
+/* 	Main - Choose
+   	================================================== */
+.choose {
+  width: 100vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-left: calc(50% - 50vw);
+  background-color: var(--clr-neutral-300);
+}
+.choose h2 ~ p {
+  max-width: 65ch;
+}
+
 /* 	Main - Latest
    	================================================== */
 .latest .author {
@@ -483,6 +492,7 @@ header {
 /* 	Footer
    	================================================== */
 .footer {
+  grid-column: 1/-1;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: var(--clr-primary-100);
