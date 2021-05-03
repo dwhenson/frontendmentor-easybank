@@ -1,0 +1,8 @@
+/* Align flex children at small and large viewports */
+
+.split {
+	display: flex;
+	gap: var(--spacer);
+	flex-wrap: wrap;
+	align-items: baseline;
+}

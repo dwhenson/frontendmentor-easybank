@@ -1,0 +1,24 @@
+/* 	Custom Properties
+   	================================================== */
+
+:root {
+	/* Colors */
+	--clr-primary-100: hsla(180, 29%, 50%, 1);
+	--clr-neutral-100: hsla(0, 0%, 100%, 1);
+	--clr-neutral-200: hsla(180, 31%, 95%, 1);
+	--clr-neutral-300: hsla(180, 52%, 96%, 1);
+	--clr-neutral-400: hsla(180, 8%, 52%, 1);
+	--clr-neutral-500: hsla(180, 14%, 20%, 1);
+	--clr-neutral-600: hsla(0, 0%, 0%, 1);
+
+	/* Spacing */
+	--spacer: 1rem;
+
+	/* Font sizes */
+	--step--1: clamp(0.73rem, 0.7rem + 0.11vw, 0.8rem);
+	--step-0: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+	--step-1: clamp(1.05rem, 0.98rem + 0.3vw, 1.25rem);
+
+	/* Font-families */
+	--ff-body: "Spartan", sans-serif;
+}
