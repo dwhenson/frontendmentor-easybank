@@ -7,8 +7,8 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 2rem;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 
 	.burger-menu .navigation ul {
 		display: flex;
@@ -82,7 +82,7 @@
 // Hamburger menu panel size and positioning
 .burger-menu[enabled="true"] .burger-menu__panel {
 	position: absolute;
-	top: 0;
+	top: 5rem;
 	left: 0;
 	visibility: hidden;
 	opacity: 0;
@@ -102,11 +102,11 @@
 	padding: 2rem;
 	border-radius: 0.5em;
 	box-shadow: 0 20px 40px var(--clr-neutral-500);
-	margin-top: 6rem;
 	background-color: var(--clr-neutral-100);
 
 	> ul {
 		flex-direction: column;
+		font-weight: 700;
 	}
 }
 // Hamburger menu panel transitions
