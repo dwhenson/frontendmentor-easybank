@@ -15,7 +15,7 @@
 
 	<body class="center-content flow-section">
 		<header class="site-head" role="banner">
-			<a href="#main" class="skip-link">Skip to content</a>
+			<a href="#main" class="visually-hidden">Skip to content</a>
 			<div class="container">
 				<div class="site-head__inner">
 					<a href="/" aria-label="Easybank home" class="site-head__brand">
@@ -44,22 +44,22 @@
 						</nav>
 					</burger-menu>
 				</div>
+
+				<section class="intro" aria-labelledby="intro-section-heading">
+					<img src="images/image-mockups.png" alt="Mobile phones showing the Easybank app" />
+					<div class="wrapper flow-content">
+						<h1 id="intro-section-heading">Next generation digital banking</h1>
+						<p>
+							Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving,
+							budgeting, investing, and much more.
+						</p>
+						<a class="cta">Request Invite</a>
+					</div>
+				</section>
 			</div>
 		</header>
 
 		<main id="main" class="container flow-section" tabindex="-1">
-			<section class="intro" aria-labelledby="intro-section-heading">
-				<img src="images/image-mockups.png" alt="Mobile phones showing the Easybank app" />
-				<div class="wrapper flow-content">
-					<h1 id="intro-section-heading">Next generation digital banking</h1>
-					<p>
-						Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving,
-						budgeting, investing, and much more.
-					</p>
-					<a class="cta">Request Invite</a>
-				</div>
-			</section>
-
 			<section class="choose flow-content" aria-labelledby="choose-section-heading">
 				<h2 id="choose-section-heading">Why choose Easybank?</h2>
 				<p>
@@ -103,7 +103,7 @@
 				</div>
 			</section>
 
-			<section class="latest flow-content" aria-labelledby="latest-section-heading">
+			<section class="latest" aria-labelledby="latest-section-heading">
 				<h2 id="latest-section-heading">Latest Articles</h2>
 				<!-- TODO add back in ... using CSS -->
 				<div class="grid">
