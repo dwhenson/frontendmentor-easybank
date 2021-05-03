@@ -3,8 +3,8 @@
 .split {
 	display: flex;
 	flex-direction: column;
-	gap: var(--spacer);
 	justify-content: space-between;
+	gap: var(--spacer);
 
 	@include respond-to("medium") {
 		flex-direction: row;
