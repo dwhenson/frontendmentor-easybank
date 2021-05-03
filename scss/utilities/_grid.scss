@@ -1,22 +1,14 @@
 .grid {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
 	gap: 2rem;
-	margin-top: 2rem;
+	margin-top: 3rem;
 
 	@include respond-to("medium") {
-		flex-direction: row;
+		grid-template-columns: repeat(2, minmax(250px, 1fr));
 	}
 
-	> * {
-		flex: 1;
-		min-width: 15rem;
-
-		@include respond-to("medium") {
-			max-width: 25rem;
-		}
+	@include respond-to("large") {
+		grid-template-columns: repeat(4, minmax(250px, 1fr));
 	}
 
 	img {
