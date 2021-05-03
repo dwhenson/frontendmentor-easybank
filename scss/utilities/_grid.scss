@@ -1,0 +1,30 @@
+.grid {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 2rem;
+
+	@include respond-to("medium") {
+		flex-direction: row;
+	}
+
+	> * {
+		flex: 1;
+		min-width: 15rem;
+
+		@include respond-to("medium") {
+			max-width: 25rem;
+		}
+	}
+
+	img {
+		margin-right: auto;
+		margin-left: auto;
+
+		@include respond-to("medium") {
+			margin-left: 0;
+		}
+	}
+}

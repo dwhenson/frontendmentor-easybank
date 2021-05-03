@@ -1,0 +1,17 @@
+/* Align flex children at small and large viewports */
+
+.cta {
+	display: inline-block;
+	// max-width: 10em;
+	padding: 0.75em 1.5em;
+	border: none;
+	border-radius: 2em;
+	background: linear-gradient(to right, var(--clr-primary-200), var(--clr-primary-300));
+	font-weight: 700;
+	color: var(--clr-neutral-100);
+	cursor: pointer;
+
+	&:hover {
+		background: linear-gradient(hlsa(193, 70%, 51%, 0.5), hlsa(192, 70%, 51%, 1));
+	}
+}
