@@ -1,10 +1,6 @@
 /* 	Header
    	================================================== */
-.header {
-	grid-column: 1 / -1;
-	padding-top: 8rem;
-	background-color: var(--clr-primary-100);
+header {
+	background-color: var(--clr-neutral-100);
 	background-image: url(../../images/bg-header-desktop.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
 }
