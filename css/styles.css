@@ -124,6 +124,7 @@ body {
   font-family: var(--ff-body);
   font-size: var(--step-0);
   font-weight: 400;
+  line-height: 1.7;
   text-align: center;
   color: var(--clr-neutral-400);
 }
@@ -135,6 +136,7 @@ body {
 
 :is(h1, h2, h3) {
   font-weight: 500;
+  line-height: 1.1;
   color: var(--clr-primary-100);
 }
 
@@ -151,8 +153,12 @@ h3 {
 }
 
 a {
+  transition: all 200ms;
   text-decoration: none;
-  color: var(--clr-neutral-400);
+  color: var(--clr-neutral-500);
+}
+a:hover {
+  color: var(--clr-primary-200);
 }
 
 section > p {
@@ -237,25 +243,18 @@ section > p {
 }
 
 .grid {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 @media (min-width: 45em) {
   .grid {
-    flex-direction: row;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
 }
-.grid > * {
-  flex: 1;
-  min-width: 15rem;
-}
-@media (min-width: 45em) {
-  .grid > * {
-    max-width: 25rem;
+@media (min-width: 65em) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
   }
 }
 .grid img {
@@ -272,8 +271,8 @@ section > p {
 .split {
   display: flex;
   flex-direction: column;
-  gap: var(--spacer);
   justify-content: space-between;
+  gap: var(--spacer);
 }
 @media (min-width: 45em) {
   .split {
@@ -319,6 +318,23 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+.site-head__inner .burger-menu .navigation ul li {
+  position: relative;
+}
+.site-head__inner a:not(.cta) {
+  font-weight: 700;
+  color: var(--clr-neutral-400);
+}
+.site-head__inner a:not(.cta):hover {
+  color: var(--clr-neutral-500);
+}
+.site-head__inner a:not(.cta):hover::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  width: 100%;
+  border-bottom: 5px solid var(--clr-primary-200);
 }
 .site-head__inner .cta {
   display: none;
@@ -455,6 +471,15 @@ header {
   flex: 1;
 }
 
+/* 	Main - Latest
+   	================================================== */
+.latest .author {
+  font-size: var(--step--1);
+}
+.latest h3 {
+  font-size: var(--step-1);
+}
+
 /* 	Footer
    	================================================== */
 .footer {
@@ -476,6 +501,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
 }
 .footer .logo {
   margin-right: auto;
