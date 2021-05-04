@@ -10,8 +10,10 @@
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 
-	.burger-menu .navigation ul {
+	burger-menu .navigation ul {
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		align-items: center;
 		gap: 2rem;
 
