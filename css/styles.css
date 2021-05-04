@@ -240,7 +240,7 @@ a:hover {
 
 .grid {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   margin-top: 3rem;
 }
 @media (min-width: 45em) {
@@ -288,6 +288,7 @@ a:hover {
 }
 .cta:hover {
   background: linear-gradient(to right, rgba(49, 211, 92, 0.75), rgba(43, 183, 218, 0.75));
+  color: var(--clr-neutral-100);
 }
 
 /* ==================================================
@@ -310,12 +311,14 @@ header {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.site-head__inner .burger-menu .navigation ul {
+.site-head__inner burger-menu .navigation ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 }
-.site-head__inner .burger-menu .navigation ul li {
+.site-head__inner burger-menu .navigation ul li {
   position: relative;
 }
 .site-head__inner a:not(.cta) {
