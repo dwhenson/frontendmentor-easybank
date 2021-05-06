@@ -1,15 +1,49 @@
 /* 	Main - Intro
    	================================================== */
-.intro {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
+#main {
+	grid-column: 1 / -1;
+	padding: 0 calc((100% - 1440px) / 2);
+	overflow-x: hidden;
+	margin-top: 0;
+	background-image: url("../images/bg-intro-mobile.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
 
 	@include respond-to("medium") {
-		flex-direction: row-reverse;
+		background-position: calc(100% + 35rem) -15%;
 	}
 
-	> * {
-		flex: 1;
+	@include respond-to("large") {
+		background-image: url("../images/bg-intro-desktop.svg");
+		background-size: 90rem;
+	}
+}
+
+.intro {
+	display: grid;
+	gap: 2rem 0;
+
+	.image {
+		margin-top: -3rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	@include respond-to("large") {
+		grid-template-rows: 5rem auto 5rem;
+		grid-template-columns: 1fr 2fr;
+
+		.text {
+			grid-area: 1 / 1 / -1 / 2;
+			align-self: center;
+		}
+
+		.image {
+			grid-area: 1 / 2 / -1 / -1;
+
+			@include respond-to("large") {
+				transform: translateX(25%);
+			}
+		}
 	}
 }

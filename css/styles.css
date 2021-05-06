@@ -248,7 +248,7 @@ a:hover {
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
 }
-@media (min-width: 65em) {
+@media (min-width: 55em) {
   .grid {
     grid-template-columns: repeat(4, minmax(200px, 1fr));
   }
@@ -338,7 +338,7 @@ header {
 .site-head__inner .cta {
   display: none;
 }
-@media (min-width: 65em) {
+@media (min-width: 55em) {
   .site-head__inner .cta {
     display: inline-block;
   }
@@ -456,18 +456,53 @@ header {
 
 /* 	Main - Intro
    	================================================== */
-.intro {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+#main {
+  grid-column: 1/-1;
+  padding: 0 calc((100% - 1440px) / 2);
+  overflow-x: hidden;
+  margin-top: 0;
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 @media (min-width: 45em) {
-  .intro {
-    flex-direction: row-reverse;
+  #main {
+    background-position: calc(100% + 35rem) -15%;
   }
 }
-.intro > * {
-  flex: 1;
+@media (min-width: 55em) {
+  #main {
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-size: 90rem;
+  }
+}
+
+.intro {
+  display: grid;
+  gap: 2rem 0;
+}
+.intro .image {
+  margin-top: -3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 55em) {
+  .intro {
+    grid-template-rows: 5rem auto 5rem;
+    grid-template-columns: 1fr 2fr;
+  }
+  .intro .text {
+    grid-area: 1/1/-1/2;
+    align-self: center;
+  }
+  .intro .image {
+    grid-area: 1/2/-1/-1;
+  }
+}
+@media (min-width: 55em) and (min-width: 55em) {
+  .intro .image {
+    transform: translateX(25%);
+  }
 }
 
 /* 	Main - Choose
@@ -476,11 +511,17 @@ header {
   width: 100vw;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  margin-top: 3rem;
   margin-left: calc(50% - 50vw);
   background-color: var(--clr-neutral-300);
 }
 .choose h2 ~ p {
   max-width: 65ch;
+}
+@media (min-width: 55em) {
+  .choose {
+    margin-top: 0;
+  }
 }
 
 /* 	Main - Latest
