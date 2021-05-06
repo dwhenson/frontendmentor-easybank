@@ -6,7 +6,8 @@
 	overflow-x: hidden;
 	margin-top: 0;
 	background-image: url("../images/bg-intro-mobile.svg");
-	background-size: contain;
+	background-position: top right;
+	background-size: 100vw;
 	background-repeat: no-repeat;
 
 	@include respond-to("medium") {
