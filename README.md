@@ -20,8 +20,7 @@ Creating full width images need not be a nightmare. Approaches for two scenarios
 
 ## Future development
 
-✏️ More work is needed to properly understand both `img` and the `background-position` property, and `.svg` files, in particular:
-
-- `img` how to resize and work images of different sizes and aspect rations in order to be able to organise a number of separate elements so that they appear to have the same size `img` (e.g. in a card component)
-- `background-position` I spent so much time trying and failing to position the background images on this challenge. I need to find a better way or get a better understanding of how to use this property.
-- `.svg` I was able to achieve some basic interaction and hover colour changes, but again I have no solid understanding of how these work. They are such a common feature that this knowledge gap also needs addressing.
+- ✏️ More work is needed to properly understand both `img` and the `background-position` property, and `.svg` files, in particular:
+  - `img` how to resize and work images of different sizes and aspect rations in order to be able to organise a number of separate elements so that they appear to have the same size `img` (e.g. in a card component)
+  - `background-position` I spent so much time trying and failing to position the background images on this challenge. I need to find a better way or get a better understanding of how to use this property.
+  - `.svg` I was able to achieve some basic interaction and hover colour changes, but again I have no solid understanding of how these work. They are such a common feature that this knowledge gap also needs addressing.
