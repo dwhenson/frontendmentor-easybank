@@ -131,6 +131,10 @@
 		flex-direction: column;
 		font-weight: 700;
 	}
+
+	a:not(.cta):hover::before {
+		bottom: -0.75rem;
+	}
 }
 // Hamburger menu panel transitions
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel {

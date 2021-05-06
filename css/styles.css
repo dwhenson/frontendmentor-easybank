@@ -212,7 +212,6 @@ a:hover {
   top: 5px;
   left: 5px;
   z-index: 100000;
-  /* Above WP toolbar */
   width: auto;
   height: auto;
   padding: 15px 23px 14px;
@@ -422,6 +421,9 @@ header {
   flex-direction: column;
   font-weight: 700;
 }
+.burger-menu[enabled=true] .navigation a:not(.cta):hover::before {
+  bottom: -0.75rem;
+}
 
 .burger-menu[enabled=true][status=open] .burger-menu__panel {
   visibility: visible;
@@ -453,8 +455,8 @@ header {
   transform: rotate(90deg);
 }
 
-/* 	Main
-   	================================================== */
+/* Main
+   ================================================== */
 /* Intro - section
    ------------------- */
 #main {
