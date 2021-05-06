@@ -1,4 +1,3 @@
-// FIX Link not showing up - appears to be there but invisible
 /* Text accessible only for screen readers */
 .visually-hidden {
 	position: absolute !important;
@@ -7,7 +6,6 @@
 	overflow: hidden;
 	white-space: nowrap;
 	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
 }
 
 .visually-hidden:hover,
@@ -23,7 +21,7 @@
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	background-color: hsla(0, 0%, 0%, 1);
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: bold;
 	line-height: normal;
 	text-decoration: none;
