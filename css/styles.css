@@ -467,13 +467,14 @@ header {
 }
 @media (min-width: 45em) {
   #main {
-    background-position: calc(100% + 35rem) -15%;
+    background-size: 50rem;
   }
 }
 @media (min-width: 55em) {
   #main {
     background-image: url("../images/bg-intro-desktop.svg");
-    background-size: 90rem;
+    background-position: calc(100% + 25rem) -20%;
+    background-size: 70rem;
   }
 }
 

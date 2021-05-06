@@ -10,12 +10,13 @@
 	background-repeat: no-repeat;
 
 	@include respond-to("medium") {
-		background-position: calc(100% + 35rem) -15%;
+		background-size: 50rem;
 	}
 
 	@include respond-to("large") {
 		background-image: url("../images/bg-intro-desktop.svg");
-		background-size: 90rem;
+		background-position: calc(100% + 25rem) -20%;
+		background-size: 70rem;
 	}
 }
 
