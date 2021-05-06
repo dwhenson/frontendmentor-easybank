@@ -454,15 +454,18 @@ header {
   transform: rotate(90deg);
 }
 
-/* 	Main - Intro
+/* 	Main
    	================================================== */
+/* Intro - section
+   ------------------- */
 #main {
   grid-column: 1/-1;
   padding: 0 calc((100% - 1440px) / 2);
   overflow-x: hidden;
   margin-top: 0;
   background-image: url("../images/bg-intro-mobile.svg");
-  background-size: contain;
+  background-position: top right;
+  background-size: 100vw;
   background-repeat: no-repeat;
 }
 @media (min-width: 45em) {
@@ -506,8 +509,8 @@ header {
   }
 }
 
-/* 	Main - Choose
-   	================================================== */
+/* Choose section
+   ------------------- */
 .choose {
   width: 100vw;
   padding-top: 3rem;
@@ -525,8 +528,8 @@ header {
   }
 }
 
-/* 	Main - Latest
-   	================================================== */
+/* Latest - section
+   ------------------- */
 .latest .author {
   font-size: var(--step--1);
 }
